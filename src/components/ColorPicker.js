@@ -19,6 +19,7 @@ const ColorPicker = ({
   id,
   hintText,
   floatingLabelText,
+  errorText,
 
   // State
   showPicker,
@@ -33,6 +34,7 @@ const ColorPicker = ({
       hintText={hintText}
       value={value}
       floatingLabelText={floatingLabelText}
+      errorText={errorText}
       inputStyle={{ color: value }}
       onClick={() => setShowPicker(true)}
       onChange={e => {
